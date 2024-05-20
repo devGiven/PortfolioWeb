@@ -1,0 +1,106 @@
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000000;
+}
+a {
+    text-decoration: none !important;
+    transition: all 0.5s ease-in-out 0s;
+  }
+iframe{
+    position: absolute;
+    top: 17%;
+    width: 99%;
+    height: 50%;
+    z-index: 0;
+    margin: auto;
+    justify-content: center;
+      
+}
+
+#head{
+    position: fixed;
+    top: 0;
+}
+
+/* logo */
+#logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1px;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 10px; 
+    text-decoration: none;
+}
+#logo:hover{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1px;
+    color: rgb(0, 122, 221);
+    font-size: 10px;
+    letter-spacing: 10px; 
+    text-decoration: none;
+}
+
+#logo::first-letter{
+    font-size: 25px;
+}
+
+#remove-link-deco{
+    text-decoration: none; 
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+}
+#remove-link-deco :active {
+    opacity: 0.85;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    opacity: 0px;
+    border: 1px solid white;
+    padding: 6px 12px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 12px;
+    
+    
+}
+.btn:hover{
+    border-color: rgb(0, 122, 221);
+    color: rgb(0, 95, 172);
+}
+
+
+/* Footer */
+#feet{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;   
+}
+#feet img{
+    width: 22px;
+    padding: 3px;
+}
+
+
+/* Media Queries */
+@media(max-width: 768px){
+    iframe{
+        position: fixed;
+        width: 96%;
+        height: 70%;
+    }
+
+    #logo{
+        font-size: 7px;
+    }
+    #logo::first-letter{
+        font-size: 20px;
+    }   
+}

@@ -1,0 +1,358 @@
+ /*=================================================================================================================================================================================
+  # Splash
+  =================================================================================================================================================================================*/
+  .body-change, #header #about{
+    animation: change-background-colour 5s infinite; 
+    animation-direction: alternate-reverse;
+    }
+
+      a {
+
+        text-decoration: none !important;
+        transition: all 0.5s ease-in-out 0s;
+      }
+    #logo-animation{
+        
+        text-align: center;
+        margin-top:32%;
+        width: 100%;
+
+       }
+    /*------------------------------------*/
+    /*             SOCIAL MEDIA           */
+    /*------------------------------------*/
+    #bi{
+      animation: float 5s ease-in-out infinite;
+  
+    }
+    .bi-github{
+      animation-delay: 1s;
+    }
+    .bi-whatsapp{
+      animation-delay: 2s;
+    }
+
+    @keyframes float{
+      0%{
+        transform: translateY(0);
+      }
+      50%{
+        transform: translateY(-15px);
+      }
+      100%{
+        transform: translateY(0);
+      }
+    }
+
+
+    /*------------------------------------*/
+    /*             logo                   */
+    /*------------------------------------*/
+    #logo{
+        color: rgb(255, 255, 255);
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        background: transparent;
+    }
+    
+    #logo::first-letter{
+        font-size: 25px;
+    }
+    #logo::selection{
+      background-color: #00000000;
+    }
+    #last-letter::selection{
+      background-color: #00000000;
+    }
+    #last-letter{
+        animation: change-colour 5s infinite; 
+        animation-direction: alternate-reverse;
+    }
+    #i-icon{
+      animation: i-change-colour 5s infinite; 
+      animation-direction: alternate-reverse;
+  }
+    #remove-link-deco{
+        text-decoration: none; 
+        -webkit-tap-highlight-color: transparent !important;
+        outline: none !important;
+    }
+    #remove-link-deco :active {
+        opacity: 0.85;
+        -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    }
+    #load-right{
+        width: 8px;
+        height: 8px;
+        opacity: 0%;
+        background-color: rgba(255, 255, 255, 0);
+        position: relative;
+        animation-name: orbit-load-right;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-direction: alternate;
+        border-radius: 100%;
+    }
+    #load-left{
+        width: 8px;
+        height: 8px;
+        opacity: 0%;
+        background-color: rgba(255, 255, 255, 0);
+        position: relative;
+        animation-name: orbit-load-left;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        border-radius: 100%;
+    }
+    
+    #hint{
+        position: relative;
+        color:#ffffff;
+        opacity: 0%;
+        font-size: 10px;
+        text-decoration: none;
+        text-decoration: none; 
+        -webkit-tap-highlight-color: transparent !important;
+        outline: none !important;
+        animation: show-hint 4s ease-in 1s forwards infinite;
+      }
+      #link-hint{
+        position: relative;
+        color:#0666b4;
+        opacity: 0%;
+        font-size: 12.5px;
+        text-decoration: none;
+        animation: show-hint-contact 4s ease-in-out 1s forwards;
+
+      }
+      #link-hint-infinite{
+        position: relative;
+        color:#0666b4;
+        opacity: 0%;
+        font-size: 14px;
+        text-decoration: none;
+        animation: show-hint 4s ease-in-out 1s both infinite;
+      }
+    
+
+   
+    /* media queries */
+    @keyframes change-colour{
+        0%    {color: rgb(0, 255, 255);}
+        5%    {color: rgb(0, 119, 255);}
+        10%   {color: rgb(72, 36, 233);}
+        25%   {color: rgb(68, 0, 255);}
+        50%   {color: rgb(42, 94, 236);}
+        55%   {color: rgb(255, 0, 85);}
+        65%   {color: rgb(0, 140, 255);}
+        70%  {color: rgb(0, 153, 69);}
+        75%   {color: rgb(0, 183, 255);}
+        100%  {color: rgb(0, 119, 255);}
+    }
+    @keyframes i-change-colour{
+      0%    {color: rgb(0, 119, 255);}
+      5%    {color: rgb(0, 255, 255);}
+      10%   {color: rgb(68, 0, 255);}
+      25%   {color: rgb(72, 36, 233);}
+      50%   {color: rgb(255, 0, 85);}
+      55%   {color: rgb(42, 94, 236);}
+      65%  {color: rgb(0, 153, 69);}
+      70%   {color: rgb(0, 140, 255);}
+      75%  {color: rgb(0, 119, 255);}
+      100%   {color: rgb(0, 183, 255);}
+  }
+    @keyframes change-background-colour{
+        from{background-color: #080808;}
+        to{background-color: #000000;}
+    }
+    
+    @keyframes orbit-load-right{
+        0% {background-color:  rgba(255, 255, 255, 0);               left: 712px;    top: 0px;   width: 8px;  height: 8px; opacity: 0%;}
+        25% {background-color: lime;                left: 719px;    top: 0px;   width: 14px; height: 14px; opacity: 100%;}
+        50% {background-color: rgb(0, 132, 255);    left: 520px;    top: 0px;   width: 16px; height: 16px; opacity: 100%;}
+        75% {background-color:  rgb(255, 0, 0);     left: 712px;    top: 0px;   width: 8px;  height: 8px; opacity: 100%;}
+        78% {background-color: rgb(255, 0, 76);     left: 570px;     top:0px;   width: 16px; height: 16px; opacity: 100%;}
+        100% {background-color: rgba(0, 209, 199, 0);left: 710px;    top: 0px;   width: 9px;  height: 9px;  opacity: 0%;}
+    }
+    @keyframes orbit-load-left{
+        0% {background-color:  rgba(255, 255, 255, 0);               left: 712px;    top: 0px;   width: 8px;  height: 8px; opacity: 100%;}
+        25% {background-color: lime;                left: 520px;    top: -100px;   width: 14px; height: 14px; opacity: 100%;}
+        50% {background-color: rgb(3, 123, 192);    left: 719px;    top: 0px;   width: 16px; height: 16px; opacity: 100%;}
+        75% {background-color:  rgb(255, 36, 36);   left: 500px;    top: -150px;   width: 8px;  height: 8px; opacity: 100%;}
+        78% {background-color: rgb(255, 0, 106);    left: 710px;     top: 0px;   width: 16px; height: 16px; opacity: 0%;}
+        100% {background-color: rgba(0, 155, 108, 0); left: 710px;    top: -230px;   width: 9px;  height: 9px; opacity:  0%;}
+    }
+    @keyframes show-hint{
+        0%{opacity: 0%;}
+        25%{opacity: 25%;}
+        50%{opacity: 0%;}
+        70%{opacity: 50%;}
+        100%{opacity: 0%;}
+
+    }
+    @keyframes show-hint-contact{
+      0%{opacity: 0%;}
+      50%{opacity: 50%;}
+      70%{opacity: 0%;}
+      100%{opacity: 100%;}
+
+  }
+    
+    @media(max-width: 768px){
+      div.cont {
+        justify-content: center;
+        align-items: lecenterft;
+        margin-left: 0%;
+     }
+
+        footer{
+            position: fixed;
+            bottom: 0;
+        }
+
+        #logo-animation{
+            text-align: center;
+            margin-top: 100%;
+        }
+        
+        #load-right{
+            left: 192px;
+        }
+        #load-left{
+            left: 192px;
+
+        }
+       
+        @keyframes orbit-load-right{
+            0% {background-color:  rgba(255, 255, 255, 0);               left: 192px;    top: 0px;   width: 8px;  height: 8px; opacity: 0%;}
+            25% {background-color: lime;                left: 299px;    top: 0px;   width: 14px; height: 14px; opacity: 100%;}
+            50% {background-color: rgb(0, 132, 255);    left: 100px;    top: 0px;   width: 16px; height: 16px; opacity: 100%;}
+            75% {background-color:  rgb(255, 0, 0);     left: 299px;    top: 0px;   width: 8px;  height: 8px; opacity: 100%;}
+            78% {background-color: rgb(255, 0, 76);     left: 150px;     top:0px;   width: 16px; height: 16px; opacity: 100%;}
+            100% {background-color: white;              left: 190px;    top: 0px;   width: 9px;  height: 9px;  opacity: 0%;}
+        }
+        @keyframes orbit-load-left{
+            0% {background-color:  rgba(255, 255, 255, 0);               left: 192px;    top: 0px;   width: 8px;  height: 8px; opacity: 100%;}
+            25% {background-color: lime;                left: 0px;    top: -100px;   width: 14px; height: 14px; opacity: 100%;}
+            50% {background-color: rgb(3, 123, 192);    left: 199px;    top: 0px;   width: 16px; height: 16px; opacity: 100%;}
+            75% {background-color:  rgb(255, 36, 36);   left: 100px;    top: -150px;   width: 8px;  height: 8px; opacity: 100%;}
+            78% {background-color: rgb(255, 0, 106);    left: 90px;     top: 0px;   width: 16px; height: 16px; opacity: 0%;}
+            100% {background-color: rgb(253, 253, 253); left: 230px;    top: -230px;   width: 9px;  height: 9px; opacity:  0%;}
+        }
+        .collapsible {
+          padding-left: 0px;
+        }
+    }
+
+
+
+    @media(max-width: 375px){
+      div.cont {
+        justify-content: center;
+        align-items: lecenterft;
+        margin-left: 0%;
+     }
+      .desktop{
+        visibility: hidden;
+      }
+      .phone{
+        width: 28px;
+        border:2px solid rgb(36, 36, 36);
+        display:flex;
+        height: 50px;
+        border-radius: 6.3px;
+        position: absolute;
+        left: 47%;
+        top: 90%;
+        visibility: visible;
+  
+      }
+      .button{
+        display: block;
+        z-index: -1;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        margin:auto;
+        position: absolute;
+        left: 45%;
+        top: 89%;
+      }
+      .scroll-screen{
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        margin:auto;
+        opacity: 90%;
+        bottom: 10%;
+        animation: move-wheel 1s linear infinite;
+      }
+  
+      #logo-animation{
+          text-align: center;
+          margin-top: 80%;
+      }
+      
+     
+      @keyframes orbit-load-right{
+          0% {background-color:  white;               left: 192px;    top: 0px;   width: 8px;  height: 8px; opacity: 0%;}
+          25% {background-color: lime;                left: 299px;    top: 0px;   width: 14px; height: 14px; opacity: 100%;}
+          50% {background-color: rgb(0, 132, 255);    left: 100px;    top: 0px;   width: 16px; height: 16px; opacity: 100%;}
+          75% {background-color:  rgb(255, 0, 0);     left: 299px;    top: 0px;   width: 8px;  height: 8px; opacity: 100%;}
+          78% {background-color: rgb(255, 0, 76);     left: 150px;     top:0px;   width: 16px; height: 16px; opacity: 100%;}
+          100% {background-color: white;              left: 190px;    top: 0px;   width: 9px;  height: 9px;  opacity: 0%;}
+      }
+      @keyframes orbit-load-left{
+          0% {background-color:  white;               left: 192px;    top: 0px;   width: 8px;  height: 8px; opacity: 100%;}
+          25% {background-color: lime;                left: 0px;    top: -100px;   width: 14px; height: 14px; opacity: 100%;}
+          50% {background-color: rgb(3, 123, 192);    left: 199px;    top: 0px;   width: 16px; height: 16px; opacity: 100%;}
+          75% {background-color:  rgb(255, 36, 36);   left: 100px;    top: -150px;   width: 8px;  height: 8px; opacity: 100%;}
+          78% {background-color: rgb(255, 0, 106);    left: 90px;     top: 0px;   width: 16px; height: 16px; opacity: 0%;}
+          100% {background-color: rgb(253, 253, 253); left: 230px;    top: -230px;   width: 9px;  height: 9px; opacity:  0%;}
+      }
+
+  }
+    
+.spinner{
+position: sticky;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-left: 35%;
+}
+
+.spinner::before,
+.spinner:after{
+content: "";
+position: absolute;
+border-radius: inherit;
+}
+.spinner:before{
+width: 50%;
+height: 50%;
+background-image: linear-gradient(0deg, rgb(3, 185, 176) 0%, rgb(0, 70, 150) 100%);
+animation: spin .5s infinite linear;
+}
+
+
+@keyframes spin{
+0%{
+  transform: rotate(0deg);
+}
+50%{
+  transform: rotate(-360deg);
+}
+100%{
+  transform: rotate(0deg);
+}
+}
